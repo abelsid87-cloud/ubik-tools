@@ -1,0 +1,49 @@
+{
+  "source": "LibreDWG test suite test/test-data/example_2018.dwg (GPL-3.0-or-later), AutoCAD 2018 format",
+  "dxfversion": "AC1032",
+  "layers": [
+    "*ADSK_SYSTEM_LIGHTS",
+    "0",
+    "Defpoints",
+    "Tavolo 2",
+    "Tavolo 3"
+  ],
+  "modelspace_entities": 66,
+  "modelspace_flattened_entities": 170,
+  "entity_types": {
+    "LWPOLYLINE": 11,
+    "INSERT": 10,
+    "DIMENSION": 9,
+    "LINE": 8,
+    "ARC": 2,
+    "SPLINE": 2,
+    "REGION": 2,
+    "ATTDEF": 2,
+    "TEXT": 2,
+    "WIPEOUT": 2,
+    "3DFACE": 2,
+    "POLYLINE": 2,
+    "XLINE": 1,
+    "ELLIPSE": 1,
+    "POINT": 1,
+    "MTEXT": 1,
+    "RAY": 1,
+    "HATCH": 1,
+    "3DSOLID": 1,
+    "SOLID": 1,
+    "TOLERANCE": 1,
+    "MULTILEADER": 1,
+    "MLINE": 1,
+    "LIGHT": 1
+  },
+  "text_count": 23,
+  "blocks_with_inserts": {
+    "CIRKLO_PUNKTOJ": 8,
+    "bloko": 2
+  },
+  "clean_msp_entities": 57,
+  "clean_dimensions": 9,
+  "compare_exit": 1,
+  "compare_missing_min": 4,
+  "compare_missing_max": 30
+}

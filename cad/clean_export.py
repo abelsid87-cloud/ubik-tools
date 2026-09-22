@@ -76,8 +76,9 @@ def main() -> int:
     def import_layout_entities(entities, target):
         before = Counter(e.dxftype() for e in entities)
         imp.import_entities(entities, target)
-        # ezdxf 1.4 Importer never calls post_bind_hook(), so copied DIMENSIONs lose their
-        # geometry block and audit() deletes them — bind them by hand.
+        # ezdxf 1.4 Importer copies DIMENSION entities but never calls post_bind_hook(), so they
+        # arrive without a geometry block ("The required geometry block for DIMENSION is not
+        # defined"); audit() then removes them as invalid. Bind them by hand so each gets a new *D block.
         for d in target.query("DIMENSION"):
             if d.dxf.get("geometry") is None and d.virtual_block_content:
                 d.post_bind_hook()
